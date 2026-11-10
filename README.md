@@ -1,11 +1,15 @@
 # Tadeo FC: Rift Cup — Web
 
-Paquete exportado con Godot 4.7.2 para servir como sitio estático en GitHub Pages. La compilación usa WebAssembly sin hilos para evitar requisitos de aislamiento entre orígenes. En Safari/iPad se muestran los controles táctiles.
+Versión de Godot 4.7.2 exportada para GitHub Pages. Incluye joystick analógico táctil, botones de acción y cámara que encuadra al jugador con el balón.
+
+## Controles
+
+- Teclado: WASD/flechas para mover, Espacio para patear, Q habilidad, E cambiar jugador, F turno de portero y Shift impulso de Jake.
+- iPad/teléfono: abre en Safari/Chrome y gira a horizontal. Joystick a la izquierda; patada, Rift, cambio, impulso y GK a la derecha.
+- Jake participa como compañero controlado por IA: sigue el juego, recupera la pelota y puede activar su disparo de vacío.
 
 ## GitHub Pages
 
-1. Copia el contenido completo de esta carpeta a la raíz de un repositorio GitHub.
-2. En **Settings → Pages**, selecciona **Deploy from a branch**, elige `main` y `/ (root)`.
-3. Abre el enlace `https://USUARIO.github.io/REPOSITORIO/` en Safari en el iPad. Para un repositorio llamado `USUARIO.github.io`, abre `https://USUARIO.github.io/`.
+El repositorio ya publica este sitio en: https://jesusxal777-boop.github.io/RiftCup/
 
-El sitio necesita servirse mediante HTTPS; no abras `index.html` como archivo local. El juego está configurado en horizontal y detecta Web para mostrar botones táctiles.
+Para actualizarlo, reemplaza los archivos del sitio en la raíz del repositorio y sube los cambios a `main`. El workflow de GitHub Actions los publica automáticamente. El sitio debe servirse por HTTPS; no abras `index.html` como archivo local.
